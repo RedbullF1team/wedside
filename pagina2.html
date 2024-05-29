@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Venta de Laptops</title>
+
+    <link rel="style2.css" href="style2.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Inicio</a></li>
+
+                <li><a href="#">Productos</a></li>
+
+                <li><a href="#">Pago</a></li>
+
+                <li><a href="index.html">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Productos -->
+
+    <section class="productos">
+
+        <h2>Productos</h2>
+
+        <div class="producto-container">
+
+            <div class="producto">
+
+                <img src="img/MACBOOK.jpeg" alt="Laptop 1">
+
+                <h3>Laptop 1</h3>
+
+                <p>Descripción del producto</p>
+
+                <p>Precio: $1000</p>
+
+                <button class="agregar-carrito" data-producto="Laptop 1" data-precio="1000">Agregar al carrito</button>
+
+            </div>
+
+            <div class="producto">
+
+                <img src="img/Ace aspire.jpeg" alt="Laptop 2">
+
+                <h3>Laptop 2</h3>
+
+                <p>Descripción del producto</p>
+
+                <p>Precio: $800</p>
+
+                <button class="agregar-carrito" data-producto="Laptop 2" data-precio="800">Agregar al carrito</button>
+
+            </div>
+            <div class="producto">
+
+                <img src="img/zenbook.jpeg" alt="Laptop 3">
+
+                <h3>Laptop 3</h3>
+
+                <p>Descripción del producto</p>
+
+                <p>Precio: $5000</p>
+
+                <button class="agregar-carrito" data-producto="Laptop 3" data-precio="800">Agregar al carrito</button>
+
+            </div>
+            <div class="producto">
+
+                <img src="img/lenovo.jpeg" alt="Laptop 4">
+
+                <h3>Laptop 4</h3>
+
+                <p>Descripción del producto</p>
+
+                <p>Precio: $1200</p>
+
+                <button class="agregar-carrito" data-producto="Laptop 4" data-precio="800">Agregar al carrito</button>
+
+            </div>
+
+            <!-- Más productos -->
+
+        </div>
+
+    </section>
+
+
+    <!-- Carrito -->
+
+    <section class="carrito">
+
+        <h2>Carrito</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Producto</th>
+
+                <th>Cantidad</th>
+
+                <th>Precio</th>
+
+                <th>Subtotal</th>
+
+            </tr>
+
+            <tbody id="carrito-table-body">
+
+                <!-- Aquí se mostrarán los productos agregados al carrito -->
+
+            </tbody>
+
+        </table>
+
+        <p id="total-precio">Total: $8000</p>
+
+        <button id="procesar-pago">Procesar pago</button>
+
+    </section>
+
+
+    <!-- Pago -->
+
+    <section class="pago">
+
+        <h2>Pago</h2>
+
+        <form>
+
+            <label for="tarjeta">Número de tarjeta:</label>
+
+            <input type="text" id="tarjeta" name="tarjeta"><br><br>
+
+            <label for="fecha">Fecha de vencimiento:</label>
+
+            <input type="date" id="fecha" name="fecha"><br><br>
+
+            <label for="codigo">Código de seguridad:</label>
+
+            <input type="text" id="codigo" name="codigo"><br><br>
+
+            <button id="realizar-pago">Realizar pago</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>&copy; 2024 Venta de Laptops</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
